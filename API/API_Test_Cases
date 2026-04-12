@@ -1,0 +1,82 @@
+# API Test Cases (Reqres)
+
+## Test Case 1
+Title: Verify GET users returns list of users
+
+Preconditions:
+- API is available
+
+Steps:
+1. Send GET request to https://reqres.in/api/users?page=2
+
+Expected result:
+- Status code is 200
+- Response body contains list of users
+- JSON structure is valid
+
+
+## Test Case 2
+Title: Verify POST creates new user
+
+Preconditions:
+- API is available
+
+Steps:
+1. Send POST request to https://reqres.in/api/users
+2. Body:
+{
+  "name": "Egor",
+  "job": "QA"
+}
+
+Expected result:
+- Status code is 201
+- Response contains id
+- Response contains createdAt
+
+
+## Test Case 3
+Title: Verify PUT updates user
+
+Preconditions:
+- API is available
+
+Steps:
+1. Send PUT request to https://reqres.in/api/users/2
+2. Body:
+{
+  "name": "Egor Updated",
+  "job": "QA Lead"
+}
+
+Expected result:
+- Status code is 200
+- Response contains updated data
+
+
+## Test Case 4
+Title: Verify DELETE removes user
+
+Preconditions:
+- API is available
+
+Steps:
+1. Send DELETE request to https://reqres.in/api/users/2
+
+Expected result:
+- Status code is 204
+- No content in response
+
+
+## Test Case 5
+Title: Verify GET single user not found
+
+Preconditions:
+- API is available
+
+Steps:
+1. Send GET request to https://reqres.in/api/users/999
+
+Expected result:
+- Status code is 404
+- User not found
