@@ -1,0 +1,62 @@
+# Login Test Cases
+
+## TC-01: Successful login with valid credentials
+Preconditions:
+- User is registered
+- Login page is open
+
+Steps:
+1. Enter valid username
+2. Enter valid password
+3. Click "Login"
+
+Expected result:
+- User is successfully logged in
+- User is redirected to the home page
+
+---
+
+## TC-02: Login with invalid password
+Preconditions:
+- User is registered
+- Login page is open
+
+Steps:
+1. Enter valid username
+2. Enter invalid password
+3. Click "Login"
+
+Expected result:
+- Error message "Invalid credentials" is displayed
+- User is not logged in
+
+---
+
+## TC-03: Login with empty fields
+Preconditions:
+- Login page is open
+
+Steps:
+1. Leave username empty
+2. Leave password empty
+3. Click "Login"
+
+Expected result:
+- Validation error messages are shown
+- User is not logged in
+
+---
+
+## TC-04: Login with leading/trailing spaces
+Preconditions:
+- User is registered
+- Login page is open
+
+Steps:
+1. Enter username with spaces (e.g. " user ")
+2. Enter valid password
+3. Click "Login"
+
+Expected result:
+- System trims spaces OR shows validation error (depending on requirements)
+- User behavior is consistent
