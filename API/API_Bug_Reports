@@ -1,0 +1,71 @@
+# API Bug Reports (Reqres)
+
+## Bug 1
+
+Title: API returns 200 OK for non-existing user
+
+Preconditions:
+- API is available
+
+Steps to reproduce:
+1. Send GET request to https://reqres.in/api/users/999
+
+Expected result:
+- Status code 404 Not Found
+
+Actual result:
+- Status code 200 OK
+
+Severity: Medium  
+Priority: Medium
+
+
+## Bug 2
+
+Title: POST request creates user with empty name
+
+Preconditions:
+- API is available
+
+Steps to reproduce:
+1. Send POST request to https://reqres.in/api/users
+2. Body:
+{
+  "name": "",
+  "job": "QA"
+}
+
+Expected result:
+- Error message should be returned
+- User should not be created
+
+Actual result:
+- User is created successfully
+
+Severity: High  
+Priority: High
+
+
+## Bug 3
+
+Title: API accepts invalid data types in request body
+
+Preconditions:
+- API is available
+
+Steps to reproduce:
+1. Send POST request to https://reqres.in/api/users
+2. Body:
+{
+  "name": 12345,
+  "job": true
+}
+
+Expected result:
+- Validation error should be returned
+
+Actual result:
+- User is created successfully
+
+Severity: High  
+Priority: Medium
