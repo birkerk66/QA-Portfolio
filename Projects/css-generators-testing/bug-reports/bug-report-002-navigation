@@ -1,0 +1,25 @@
+# Bug 02: Navigation issues and intermittent 502 error in generators section
+
+## Description
+While interacting with generator navigation, some buttons do not switch pages correctly. In some cases, clicking different generators results in no change or triggers a 502 Bad Gateway error.
+
+## Steps to reproduce
+1. Open website
+2. Navigate to “Functions” section
+3. Click on different generators (e.g. Grid Generator → Favicon Generator → CSS Optimization)
+4. Repeat switching between generators
+
+## Actual result
+- Some navigation clicks do not change the page
+- In some cases, a 502 Bad Gateway error appears
+- Behavior is inconsistent (works after refresh or random interactions)
+
+## Expected result
+Each generator button should reliably navigate to the correct page without errors.
+
+## Environment
+- Chrome (Desktop)
+- Mobile browser (partial reproduction)
+
+## Severity
+High (intermittent functional + backend issue)
