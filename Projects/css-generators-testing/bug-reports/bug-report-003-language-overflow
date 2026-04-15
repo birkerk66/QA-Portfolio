@@ -1,0 +1,26 @@
+# Bug 03: Language selector text overflow on mobile layout
+
+## Description
+In mobile view, the language selector button (e.g. "English") does not properly handle long text input. When extended text is used, characters overflow outside the button boundary.
+
+## Steps to reproduce
+1. Open site on mobile device or mobile viewport (DevTools)
+2. Locate language selector near “Sign in” button
+3. Replace language label with longer text (or simulate long string)
+4. Observe layout behavior
+
+## Actual result
+Text overflows outside button boundaries, breaking layout consistency.
+
+## Expected result
+Text should be truncated, wrapped, or constrained within the button container.
+
+## Environment
+- Mobile viewport (Chrome DevTools)
+- Android browser (tested manually)
+
+## Severity
+Medium (UI/UX issue)
+
+## Evidence
+See /evidence/bug-03-language-overflow.png
