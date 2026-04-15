@@ -1,0 +1,25 @@
+# Bug 01: UI arrow misalignment in generator cards
+
+## Description
+An arrow icon in one of the generator cards is not aligned consistently with other cards. Instead of matching the design pattern used across the section, it appears visually shifted.
+
+## Steps to reproduce
+1. Open the main page
+2. Scroll to the “Functions / Generators” section
+3. Compare multiple generator cards
+
+## Actual result
+Arrow icon is visually misaligned compared to other cards and breaks UI consistency.
+
+## Expected result
+All generator cards should have consistent layout and aligned UI elements.
+
+## Environment
+- Chrome (Desktop)
+- Windows
+
+## Severity
+Low / UI issue
+
+## Evidence
+See /evidence/bug-01-arrow.png
