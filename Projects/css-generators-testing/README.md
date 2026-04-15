@@ -1,80 +1,69 @@
-# CSS Generators Testing (Rust TSR Generator)
+# CSS Generators Testing
 
-## 📌 Project Description
-This project focuses on testing a web platform that provides multiple CSS/UI generators, including TSR (Rust-based) generator functionality.
+## Project Description
+I tested a web platform that provides different CSS/UI generators. 
 
-The goal was to validate core functionality, navigation, UI behavior, and responsiveness across different environments.
-
----
-
-## 🎯 Testing Scope
-- Navigation between generator pages
-- Functionality of generators (inputs, outputs, behavior)
-- UI/UX consistency
-- Responsive design (mobile & desktop)
-- Edge-case behavior (extreme input values)
+The goal was to check how the application behaves in real user scenarios, including navigation, generator functionality, and UI behavior.
 
 ---
 
-## 🧪 Testing Types
-- Exploratory Testing
-- Functional Testing
-- UI Testing
-- Responsive Testing
-- Edge Case Testing
+## What I tested
+- Navigation between pages and generators  
+- Generator inputs and outputs  
+- UI elements and layout  
+- Responsive behavior (desktop and mobile)  
+- Edge cases (large input values)
 
 ---
 
-## 🌐 Test Environment
-- Browsers: Chrome (Desktop), Mobile Browser
-- Devices: Desktop, Mobile
-- Tools: Chrome DevTools
+## Testing approach
+I mainly used exploratory testing, focusing on how a real user would interact with the product.
+
+Also checked:
+- UI consistency  
+- Basic functionality  
+- Behavior under unusual inputs  
 
 ---
 
-## 🐞 Bugs Found
-Key issues identified during testing:
-
-- Navigation issue (pages not switching after specific generator usage)
-- Intermittent backend error (502 Bad Gateway)
-- UI bug (element misalignment / arrow issue)
-- Mobile layout overflow (text breaking container)
-- Animation disappearing at extreme values (edge-case behavior)
-
-👉 Detailed bug reports are available in the /bug-reports folder.
+## Environment
+- Chrome (desktop)  
+- Mobile browser  
+- DevTools  
 
 ---
 
-## 📋 Test Artifacts
-- Test Cases → /test-cases
-- Checklists → /checklists
-- Bug Reports → /bug-reports
+## Bugs I found
+During testing I found several issues:
+
+- Navigation issue (page didn’t always switch after using some generators)  
+- Intermittent 502 Bad Gateway error  
+- UI bug (arrow / element misalignment)  
+- Text overflow on mobile  
+- Animation disappearing on extreme values  
+
+Detailed reports are in the /bug-reports folder.
 
 ---
 
-## 📷 Evidence
-Screenshots and visual proof of issues can be found in the /evidence folder.
+## Test artifacts
+- Bug reports → /bug-reports  
+- Test cases → /test-cases  
+- Checklist → /checklists  
 
 ---
 
-## 🛠 Tools Used
-- Browser DevTools
-- Trello (for bug tracking and task management)
-- Manual Testing Techniques
+## Notes
+- Some behaviors looked strange but were confirmed as “by design”  
+- Most core features worked stable under normal usage  
+- Issues mainly appeared in edge cases and UI  
 
 ---
 
-## 💡 Notes
-- Some behaviors were confirmed as "by design"
-- Testing was focused on real user scenarios and edge cases
-- Generators generally showed stable behavior under normal conditions
+## Result
+Overall, the application works stable for typical usage, but there are some UI issues and edge-case behaviors that can be improved.
 
 ---
 
-## 📊 Result
-The application demonstrated overall stable performance, with several UI and edge-case issues identified during exploratory testing.
-
----
-
-## 👨‍💻 Author
-Junior QA Engineer (Manual Testing)
+## About me
+Junior QA Engineer focused on manual testing and real user scenarios.
