@@ -1,4 +1,4 @@
-**** Responsive Checklist****
+Responsive Checklist
 
  Desktop
 - Layout fits screen properly
