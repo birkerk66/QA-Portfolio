@@ -1,30 +1,23 @@
-Test Case ID: TC-004
+## TC-004: Verify Core Website Functionality Across Multiple Browsers
 
-Title: Verify website functionality across different browsers (Chrome, Safari, Android Chrome)
+**Component:** Cross-Browser Verification  
+**Environment:** Desktop Chrome, Mobile Safari (iOS), Mobile Chrome (Android)  
+**Preconditions:** 
+* Access to Desktop, iOS, and Android test environments.
+* Chrome and Safari browsers installed and updated to latest versions.
 
-Preconditions:
-• Devices available: Desktop, iPhone, Android
-• Browsers installed: Chrome, Safari
-• Internet connection is active
+### Test Steps:
+1. Open `https://css-zone.com/` in **Desktop Chrome**:
+   * Scroll main page, test top menu navigation, and interact with 1 generator.
+2. Open `https://css-zone.com/` in **Mobile Safari (iOS)**:
+   * Perform key navigation actions and interact with 1 generator.
+3. Open `https://css-zone.com/` in **Mobile Chrome (Android)**:
+   * Perform key navigation actions and interact with 1 generator.
 
-Test Steps:
+### Expected Result:
+* Website features operate consistently across Desktop Chrome, iOS Safari, and Android Chrome.
+* Core UI components, layout structures, and CSS output generator logic behave identically across all environments.
+* No browser-specific visual defects or missing controls observed.
 
-1. Open website https://css-zone.com/ in Chrome (Desktop)
-2. Perform basic actions:
-• Scroll page
-• Click main navigation links
-• Open any generator and change values
-3. Open the same website in Safari (iPhone)
-4. Repeat key actions (navigation, buttons, generator interaction)
-5. Open the website in Chrome (Android)
-6. Repeat key actions
-
-Expected Result:
-• Website works consistently across all browsers
-• No broken layout or UI issues
-• Navigation works correctly
-• Generators function properly
-• No visual or functional differences that affect usability
-
-Postconditions:
-• Website is usable in all tested environments
+### Postconditions:
+* Application compatibility confirmed across all target browser environments.
