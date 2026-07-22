@@ -1,4 +1,4 @@
-# 🔐 Login & Authentication Bug Reports
+#  Login & Authentication Bug Reports
 
 ---
 
