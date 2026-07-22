@@ -18,4 +18,4 @@
 * Browser DevTools console contains no unhandled 4xx/5xx network errors or JavaScript exceptions.
 
 ### Postconditions:
-* User remains on the fully rendered homepage.****
+* User remains on the fully rendered homepage.
