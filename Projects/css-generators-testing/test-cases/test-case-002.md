@@ -1,23 +1,21 @@
-Test Case ID: TC-002
+## TC-002: Verify Dynamic CSS Preview Updates and Code Copy Functionality
 
-Title: Verify that CSS generators update preview and code correctly
+**Component:** Functional / CSS Generators  
+**Preconditions:** 
+* User is on the homepage (`https://css-zone.com/`).
 
-Preconditions:
-• User opened https://css-zone.com/
+### Test Steps:
+1. Select and open any generator tool (e.g., *Gradient Generator*).
+2. Modify generator input controls (change color pickers, adjust angle sliders, edit numerical inputs).
+3. Observe the real-time visual preview canvas.
+4. Verify the generated CSS code block output.
+5. Click the **"Copy Code"** action button.
 
-Test Steps:
+### Expected Result:
+* Visual preview updates immediately without UI delay or screen flickering upon value change.
+* Generated CSS snippet dynamically updates to match the configured parameters.
+* Clicking "Copy Code" copies the valid CSS string to the system clipboard.
+* No browser performance freezing or UI hanging occurs during interaction.
 
-1. Open any generator (e.g., Gradient Generator)
-2. Change values (colors, angles, etc.)
-3. Observe preview changes
-4. Check generated CSS code
-5. Click “Copy” button
-
-Expected Result:
-• Preview updates immediately after value changes
-• Generated CSS code updates correctly
-• Copy button copies correct code
-• No delays, freezes, or errors
-
-Postconditions:
-• Changes are reflected correctly in UI
+### Postconditions:
+* Valid CSS output resides in the user's clipboard ready for pasting.
