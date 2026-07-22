@@ -1,23 +1,21 @@
-Test Case ID: TC-001
+## TC-001: Verify Homepage Initial Load and Layout Integrity
 
-Title: Verify that homepage loads correctly without UI issues
+**Component:** Core Web / Homepage  
+**Environment:** Desktop / Mobile Browsers  
+**Preconditions:** 
+* Desktop browser (Chrome) installed.
+* Active internet connection available.
 
-Preconditions:
-• Browser is installed
-• Internet connection is active
+### Test Steps:
+1. Launch Google Chrome browser.
+2. Navigate to `https://css-zone.com/`.
+3. Wait for the page DOM and visual assets to fully load.
+4. Scroll vertically down to the page footer and back up.
 
-Test Steps:
+### Expected Result:
+* Homepage renders without visual layout shifts or broken elements.
+* All content sections, buttons, and navigation links are fully visible.
+* Browser DevTools console contains no unhandled 4xx/5xx network errors or JavaScript exceptions.
 
-1. Open browser (Chrome)
-2. Navigate to https://css-zone.com/
-3. Wait until page fully loads
-4. Scroll through the page
-
-Expected Result:
-• Page loads without errors
-• All sections are visible
-• No broken or missing elements
-• No layout issues while scrolling
-
-Postconditions:
-• User remains on homepage
+### Postconditions:
+* User remains on the fully rendered homepage.****
