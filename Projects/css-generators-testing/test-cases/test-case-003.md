@@ -1,28 +1,24 @@
-Test Case ID: TC-003
+## TC-003: Verify Responsive Layout and Touch Usability on Mobile (iOS / Safari)
 
-Title: Verify responsive layout and usability on mobile device (iPhone / Safari)
+**Component:** Mobile UI / Responsive Usability  
+**Environment:** iPhone / Safari Browser  
+**Preconditions:** 
+* Physical iOS device or mobile emulator (Safari).
+* Active internet connection.
 
-Preconditions:
-• iPhone device
-• Safari browser
-• Internet connection
+### Test Steps:
+1. Launch Safari browser on the mobile device.
+2. Navigate to `https://css-zone.com/`.
+3. Scroll down through the page content.
+4. Tap the mobile hamburger menu icon to expand navigation.
+5. Tap main navigation links and open a generator tool.
+6. Interact with generator touch sliders and buttons.
 
-Test Steps:
+### Expected Result:
+* Page layout fluidly adapts to the mobile screen width without horizontal overflow scrolling.
+* Typography remains crisp and legible without cut-off text containers.
+* Navigation menu opens and closes smoothly.
+* Touch targets (buttons, sliders, links) are accurately clickable and responsive.
 
-1. Open Safari
-2. Navigate to https://css-zone.com/
-3. Scroll through the page
-4. Open menu (if exists)
-5. Tap main buttons / links
-6. Open any generator and interact with controls
-
-Expected Result:
-• Layout adapts to screen size correctly
-• No overlapping or cut-off elements
-• Text is readable
-• No horizontal scrolling
-• Buttons are clickable and responsive
-• Menu works correctly
-
-Postconditions:
-• User can navigate site without issues
+### Postconditions:
+* User successfully navigates mobile pages without interface blocking.
